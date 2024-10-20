@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passo com DOM</title>
+    <style>
+        body{
+            background-color: rgb(70, 125, 200);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] //usa o [0] para definir que é o primeiro paragrafro <p> do conteúdo, ou [1], [2], conforme for sua necessidade.
+
+        /*        
+        window.document.write('Está escrito assim: '+p1.innerHTML)
+        corpo.style.background = 'black'
+        p1.style.color = 'darkblue' 
+        
+        var d = window.document.getElementById('msg') // seleciona por #id da <tag>, não precisa definir por [] pois #id é único;
+
+        d.style.background = 'yellow' //muda cor do BG
+        d.style.color = 'black' //muda a cor da fonte
+        d.innerText = 'Toma lasqueira' //altera ou inclui texto no elemento
+
+        var c = window.document.getElementsByName('msg')[0]  //seleciona o elemento pelo nome da <tag> e define qual [] por posição no conteúdo;        
+
+        var e = window.document.getElementsByClassName('msg')[0] //seleciona o elemento pelo nome da classe da <tag> e define qual [] por posição no conteúdo; 
+
+        e.innerText = 'DJANHOOO!'
+        */
+
+        /* querySelector() pode selecionar qualquer elemento seja tag, id# ou class.*/
+        var y = window.document.querySelector('div#msg') 
+        y.style.color = 'black'        
+
+    </script>
+</body>
+</html>

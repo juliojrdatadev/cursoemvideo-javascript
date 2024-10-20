@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        /* codigos .css */
+        body { 
+            background-color: dodgerblue;
+            color: white; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em ;
+        }
+    </style>
+</head>
+<body>
+    <!-- inico conteúdo html -->
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+
+    <script>
+        var n1 = Number(prompt("Digite o primeiro numero: ")) //declarei o tipo Number antes da captura do valor
+        var n2 = Number(prompt("Digite o segundo numero: "))
+        var s = n1 + n2 //como declarei Number na captura do valor da variavel, aqui o + significa adição/soma, se não tivesse declarado, seria concatenação
+        window.alert("A soma dos valores é = "+String(s)) //ou seja, aqui foi feito na +(soma/adição) com n2
+
+        /* no caso da variavel ser do tipo numero (number), precisa-se declara a variavel antes da captura do dado para que o JS entenda qual o tipo de dado está sendo salvo, vaso contratio, ele pode interpretar como qualquer outaro tipo, inclusive uma string (conjunto de caracteres ou texto) e na hora da "adição (+)" fazer apresentação do valores, como se fosse apenas uma "concatenação" */
+    </script>
+</body>
+</html>
